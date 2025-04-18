@@ -1,0 +1,293 @@
+/* landing.css - Specific styles for index.html content sections */
+
+/* ===== Our Story Section ===== */
+.our-story-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.story-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.founders-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.founders-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.founders-image:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 30px 20px;
+    color: white;
+}
+
+.image-overlay h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.story-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.story-text h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.story-text h2::after {
+    margin: 15px 0;
+}
+
+.milestones {
+    margin: 30px 0;
+}
+
+.milestone {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.year {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.event {
+    flex: 1;
+    font-weight: 500;
+}
+
+/* ===== Science of Exercise Section ===== */
+.science-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.science-section .container {
+    max-width: 800px;
+}
+
+.science-section p {
+    margin-bottom: 30px;
+}
+
+/* ===== Body Type Section ===== */
+.body-type-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+.body-types {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.body-type {
+    flex: 1;
+    min-width: 300px;
+    margin: 15px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.body-type:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.body-icon {
+    margin-bottom: 20px;
+}
+
+.body-icon svg {
+    width: 60px;
+    height: 60px;
+}
+
+.body-type h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* ===== Google Reviews Section ===== */
+.reviews-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.google-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.google-embed {
+    flex: 1;
+    min-width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.google-embed iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.review-cards {
+    flex: 1;
+    min-width: 300px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-card {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewer {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.stars {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.review-date {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.review-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ===== Team Section ===== */
+.team-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+/* ===== Instagram Section ===== */
+.instagram-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* ===== Functional Training Section ===== */
+.functional-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--light-color);
+}
+
+/* ===== Strength Training Section ===== */
+.strength-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .story-content {
+        flex-direction: column;
+    }
+    
+    .story-text h2 {
+        text-align: center;
+    }
+    
+    .story-text h2::after {
+        margin: 15px auto;
+    }
+    
+    .milestone {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .year {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .body-type {
+        min-width: 100%;
+    }
+    
+    .google-embed, 
+    .review-cards {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 60px 0;
+    }
+}
