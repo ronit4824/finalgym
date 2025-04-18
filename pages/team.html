@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFECT GYM - #NOTJUSTAGYM</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/css/global.css">
+    
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="/css/components/header.css">
+    <link rel="stylesheet" href="/css/components/carousel.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
+    
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="/css/teams.css">
+</head>
+
+<body>
+
+     <!-- Header Component -->
+     <div id="header"></div>
+    
+     <!-- Hero Carousel Component -->
+     <div id="hero-carousel"></div>
+
+    <!-- Team Section with Flip Cards -->
+<section class="team-section" id="team">
+    <div class="container">
+        <h2>TEAM OF EXPERT COACHES</h2>
+        
+        <div class="team-members">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Kiran Singh">
+                        <h3>Kiran Singh</h3>
+                        <p>Head Trainer</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Kiran Singh</h3>
+                        <p>15+ years experience</p>
+                        <p>Specializes in strength training</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Aniket Pahalkar">
+                        <h3>Aniket Pahalkar</h3>
+                        <p>Cardio Expert</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Aniket Pahalkar</h3>
+                        <p>10+ years experience</p>
+                        <p>HIIT & Functional Specialist</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Umesh Burata">
+                        <h3>Umesh Burata</h3>
+                        <p>Nutrition Coach</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Umesh Burata</h3>
+                        <p>Sports Nutritionist</p>
+                        <p>Custom Diet Plans</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Eamesh Haide">
+                        <h3>Eamesh Haide</h3>
+                        <p>Yoga Instructor</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Eamesh Haide</h3>
+                        <p>Mind-Body Specialist</p>
+                        <p>Flexibility & Recovery</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Footer Component -->
+ <div id="footer"></div>
+    
+ <!-- Scripts -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+ <!-- Component JS -->
+ <script src="/js/components/header.js"></script>
+ <script src="/js/components/carousel.js"></script>
+ 
+ <!-- Main JS -->
+ <script src="/js/main.js"></script>
+ 
+ <!-- Load Components -->
+ <script>
+     // Load header
+     fetch('/components/header.html')
+         .then(response => response.text())
+         .then(data => document.getElementById('header').innerHTML = data);
+     
+     // Load hero carousel
+     fetch('/components/carousel.html')
+         .then(response => response.text())
+         .then(data => document.getElementById('hero-carousel').innerHTML = data);
+     
+     // Load footer
+     fetch('/components/footer.html')
+         .then(response => response.text())
+         .then(data => document.getElementById('footer').innerHTML = data);
+ </script>
+    
+
+    </body>
+</html>
+
